@@ -41,10 +41,17 @@ import os                            #? Import the os module to interact with th
 
 image1 = Image.open("cat.4001.jpg")          
 #image1.rotate(90).show()                           #? Rotate the image by 90 degrees and display it
-#image1.filter(ImageFilter.BLUR).show()             #? Apply a blur filter to the image and display it
+#image1.filter(ImageFilter.GaussianBlur(15)).show() #? Apply a Gaussian blur filter to the image and display it
 #image1.filter(ImageFilter.CONTOUR).show()          #? Apply a contour filter to the image and display it
-image1.convert("L").show()                          #? Convert the image to grayscale and display it
-
+#image1.convert("L").show()                         #? Convert the image to grayscale and display it
+#image1.filter(ImageFilter.DETAIL).show()           #? Apply a detail filter to the image and display it
+#image1.filter(ImageFilter.EDGE_ENHANCE).show()     #? Apply an edge enhance filter to the image and display it
+#image1.filter(ImageFilter.EMBOSS).show()           #? Apply an emboss filter to the image and display it
+#image1.filter(ImageFilter.SHARPEN).show()          #? Apply a sharpen filter to the image and display it
+#image1.filter(ImageFilter.SMOOTH).show()           #? Apply a smooth filter    
+#image1.transpose(Image.FLIP_LEFT_RIGHT).show()     #? Flip the image horizontally and display it
+#image1.transpose(Image.FLIP_TOP_BOTTOM).show()     #? Flip the image vertically
+#image1.transpose(Image.ROTATE_180).show()          #? Rotate the image by 180 degrees and display it
 
 
 
